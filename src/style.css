@@ -3,7 +3,28 @@
   padding: 0;
 }
 
-.wrapper {
+html, body {
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+}
+
+p {
+  padding: 10px 0;
+}
+
+a {
+  color: #ffffff;
+}
+
+#container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#logo {
   width: 100%;
   height: 100%;
   display: flex;
@@ -11,7 +32,7 @@
   align-items: center;
 }
 
-.wrapper h1.glitch {
+#logo h1 {
   color: white;
   font-family: sans-serif;
   font-weight: 800;
@@ -21,11 +42,11 @@
   font-style: italic;
 }
 
-.wrapper h1.glitch::before,
-.wrapper h1.glitch::after {
+#logo h1::before,
+#logo h1::after {
   padding: 30px;
   color: white;
-  content: "PITCH SHIFT";
+  content: "SHIFT";
   font-style: italic;
   position: absolute;
   width: 100%;
@@ -35,7 +56,7 @@
   top: 0;
 }
 
-.wrapper h1.glitch::before {
+#logo h1::before {
   left: 3px;
   text-shadow: -2px 0 red;
   animation-name: glitch-animation-1;
@@ -46,7 +67,7 @@
   animation-direction: reverse-alternate;
 }
 
-.wrapper h1.glitch::after {
+#logo h1::after {
   left: -3px;
   text-shadow: -2px 0 blue;
   animation-name: glitch-animation-2;
